@@ -1,0 +1,101 @@
+---
+title: "GitHub"
+author: "Flavio Lozano-Isla"
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: true
+    self-contained: true
+    output-file: "index"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  warning: false
+---
+
+```{r}
+library(tidyverse)
+```
+
+# Rstudio codes
+
+- Limpiar consola o terminal
+  - ctrl + L  
+- Asignar un objeto
+  - ctrl + -
+- Operador pipe
+  - ctrl + shift + m
+- Ejecutar código en la consola
+  - ctrl + enter
+- Ejecutar código en el terminal
+  - ctrl + alt + m
+  
+
+# Bash code
+
+```{bash}
+#| eval: false
+
+cd # change directory
+rm # remove file or folder
+ls # list files
+mkdir # create a directory
+open # open file or directory
+```
+
+# GitHub
+
+## User
+
+## Create a SSH key
+
+```{bash}
+#| eval: false
+
+ssh-keygen -t rsa -C "flozano@lamolina.edu.pe" 
+cat ~/.ssh/id_rsa.pub
+```
+
+- Insertar SSH key en GitHub <https://github.com/settings/keys>
+
+## Info: local > server (firs time)
+
+```{bash}
+#| eval: false
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Flavjack/cif.git # remplazar!
+git push -u origin main
+```
+
+```{bash}
+#| eval: false
+
+git config --global user.name flozano
+
+git config --global user.email flozano@lamolina.edu.pe
+```
+
+## Info: local > server (updates)
+
+```{bash}
+#| eval: false
+
+git add .
+git commit -m "update"
+git push
+```
+
+## Info: server > local
+
+```{bash}
+#| eval: false
+
+git pull
+```
+
+
