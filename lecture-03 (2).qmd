@@ -18,6 +18,9 @@ execute:
 library(tidyverse)
 ```
 
+# Aprendiendo Rstudio
+En esta sesión aprendimos a lanzar una página
+
 # Rstudio codes
 
 - Limpiar consola o terminal
