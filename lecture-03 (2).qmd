@@ -1,6 +1,6 @@
 ---
 title: "GitHub"
-author: "Flavio Lozano-Isla"
+author: "Mariangelica Pineda"
 format:
   html:
     toc: true
@@ -75,9 +75,9 @@ git push -u origin main
 ```{bash}
 #| eval: false
 
-git config --global user.name flozano
+git config --global user.name mariangelicapic
 
-git config --global user.email flozano@lamolina.edu.pe
+git config --global user.email 20180062@lamolina.edu.pe
 ```
 
 ## Info: local > server (updates)
@@ -97,5 +97,6 @@ git push
 
 git pull
 ```
+lanzamiento de pagina web
 
 
